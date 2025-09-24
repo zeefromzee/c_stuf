@@ -9,7 +9,8 @@ Each project is simple, but they cover important concepts like loops, conditiona
 
 ##  Projects Included
 Some of the projects you’ll find here:
-- **Rock, Paper, Scissors** – A fun command-line game against the computer  
+- **Rock, Paper, Scissors** – A fun command-line game against the computer
+- **Hangman Game**- A fun way to pass your time bu guessing words 
 
 (*More projects are being added as I keep learning!*)
 
