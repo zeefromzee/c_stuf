@@ -2,6 +2,12 @@
 #include<stdlib.h>
 #include<time.h>
 
+//==========================================================================================================
+//BEFORE YOU GO ON READING MY CODE, I WOULD LIKE TO PREFACE THAT I MADE THIS CODE WHILE 
+//MY MENTAL HEALTH WAS AT RELATIVELY UNPLEASNT, SO PLS FORGIVE MY IMMATURE ATTEMPT AT MAKING A GAME 
+//OF SNAKE AND LADDERRS; THOUGH I CAN ASSURE YOU MY OTHER PROJECTS IN C ARE MADE MUCH BETTER THAN THIS ONE
+//AND I DEEPLY APOLOPGISE FOR HAVUNG ANYTHING TO DO WITH THE DELVELOPMENT OF THIS;
+//==========================================================================================================
 int dice_roll(int player){
     int dice[6]={1,2,3,4,5,6};
     int array_size = sizeof(dice) / sizeof(dice[0]);
