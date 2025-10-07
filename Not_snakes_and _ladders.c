@@ -4,9 +4,9 @@
 
 //==========================================================================================================
 //BEFORE YOU GO ON READING MY CODE, I WOULD LIKE TO PREFACE THAT I MADE THIS CODE WHILE 
-//MY MENTAL HEALTH WAS AT RELATIVELY UNPLEASNT, SO PLS FORGIVE MY IMMATURE ATTEMPT AT MAKING A GAME 
+//MY MENTAL HEALTH WAS  RELATIVELY UNPLEASNT, SO PLS FORGIVE MY IMMATURE ATTEMPT AT MAKING A GAME 
 //OF SNAKE AND LADDERRS; THOUGH I CAN ASSURE YOU MY OTHER PROJECTS IN C ARE MADE MUCH BETTER THAN THIS ONE
-//AND I DEEPLY APOLOPGISE FOR HAVING ANYTHING TO DO WITH THE DELVELOPMENT OF THIS;
+//AND I'D LIKE TO QUOTE ON WHAT SCHRODINGER ONCE SAID, "I'M SORRY THAT I HAD ANYTHING TO DO WITH THIS."
 //==========================================================================================================
 int dice_roll(int player){
     int dice[6]={1,2,3,4,5,6};
@@ -28,7 +28,7 @@ int main(){
     srand(time(NULL));
     int player = 0;
     int ladder[9]={53, 12, 36, 2, 78, 45, 87, 30};
-    //int no_snake_ladder={68,42,51,47,}
+    
     player = dice_roll(player);  
     
     while(player < 100){
