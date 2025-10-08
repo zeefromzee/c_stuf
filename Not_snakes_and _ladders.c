@@ -27,67 +27,55 @@ int dice_roll(int player){
 int main(){
     srand(time(NULL));
     int player = 0;
-    int ladder[9]={53, 12, 36, 2, 78, 45, 87, 30};
     
     player = dice_roll(player);  
+    int ladder[7]={5, 35, 60, 81, 14};
+    int increase[7]={5, 6, 7, 8,10, 15};
+    int snakes[10]={29, 40, 55, 67, 72, 92,14, 22,30};
+    int dec[7]={5, 2, 20, 12, 9, 10 };
     
+
+    }
+}
     while(player < 100){
         printf("Let's roll again\n");
         printf("Do you want to roll again?(y/n): ");
         char choice;
         scanf(" %c", &choice);
+        
         if(choice == 'y'){
-            player = dice_roll(player);  
-            if(player==ladder[0]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[1]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=30;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[2]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[3]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=45;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[4]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[5]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[6]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else if(player==ladder[7]){
-                printf("Congratulations! You just found a ladder :D");
-                player+=15;
-                printf("Your cooki has been placed at: %d", player);
-            }
-            else{
-            break;
-            }
+            for(int i=10; i>=snakes[0];i--){
+            player = dice_roll(player);            
+                if (player==snakes[0]){
+                    for (int i=0; i<=dec[0]; i++){
+                        int dec_size= sizeof(dec)/ sizeof(dec[0]);
+                        int random_dec = rand() % dec_size;
+                        int dec_choice=dec[random_dec];
+                        player=player-dec_choice;
+                        printf("Your cooki is at: %d", player);
+            
+            for (int i=7; i>=ladder[0]; i--){
+                if (player==ladder[i]){
+                    for (int i=0; i<=increase[7]; i++){
+                        int increase_size=sizeof(increase)/ sizeof(increase[0]);
+                        int random_increase= rand()% increase_size;
+                        int increase_choice= increase[random_increase];
+                        player=player+increase_choice;
+                        printf("Your cooki is at: %d", player);     
+                        }
         }
+    }
+            
+            
+        }else{
+            break;
+        }
+    }
     
     if(player >= 100){
         printf("You won!\n");
     }
+    
     return 0;
-    
-    }
-}
-    
+            }
+}}
